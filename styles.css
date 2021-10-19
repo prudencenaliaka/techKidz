@@ -167,3 +167,56 @@ font-weight:'Poppins',sans-serif;
 .about{
   background-color: #f8f9fa;
 }
+.links .products li a{
+  color: #fff !important;
+  font-weight: 600;
+  text-align: right;
+  list-style: none;
+}
+.list-unstyled li a{
+ color: #fff !important;
+ font-weight: 600;
+ text-align: right;
+ list-style: none;
+}
+ .footer{
+  background: linear-gradient(to right, #a517ba,#5f1782)!important;
+  color: white;
+}
+.row .text .pt-5{
+  text-transform: inherit;
+}
+.awards .title::before{
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 3px;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.awards .title::after{
+  content: "Our Achievements";
+  font-size: 20px;
+  color: #5f1782;
+  position: absolute;
+  padding: 5px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.awards .title{
+  position: relative;
+  margin-bottom: 60px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  font-family: "ubuntu",sans-serif;
+}
+.awards img{
+  border-radius: 50%;
+}
+.awards{
+  background-color: #fff;
+}
