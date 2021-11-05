@@ -6,16 +6,31 @@ import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;70
 body{
   font-family: sans-serif;
 }
+.fullscreen-bg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  object-fit: fill;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 #nav-bar{
   position: sticky;
   top: 0;
   z-index: 10;
 }
-#nav-bar img{
-
-}
 .navbar{
-  background: linear-gradient(to right, #a517ba,#5f1782);
   padding: 0 !important;
 }
 .navbar-nav li {
@@ -32,9 +47,11 @@ body{
 }
 /*-----BANNER----*/
 #banner{
-  background: linear-gradient(to right, #a517ba,#5f1782);
-  color:white;
+  backface-visibility: visible;
+  color: #fff !important;
   padding-top: 5%;
+  opacity: 0.6;
+  font: weight 600;
 }
 .promo-title{
 font-weight:'Poppins',sans-serif;
@@ -81,7 +98,7 @@ font-weight:'Poppins',sans-serif;
 .services .title::after{
   content: "What we Offer";
   font-size: 20px;
-  color: #5f1782;
+  color: #fff;
   position: absolute;
   padding: 5px;
   bottom: -10px;
@@ -97,6 +114,7 @@ font-weight:'Poppins',sans-serif;
   border: 3px solid #5f1782;
   color: #000;
   margin-bottom: 20px;
+  opacity: 0.6;
 }
 /*.services .serv-content .card i{
   font-size: 60px;
@@ -114,12 +132,14 @@ font-weight:'Poppins',sans-serif;
 }
 
 .services .serv-content .card:hover{
+  opacity: 0.6;
   color: #fff;
   background: #5f1782;
 
 }
 .services .serv-content .card:hover .text{
   color: #fff;
+  opacity: 0.6;
 }
 
 .services .serv-content .card:hover .box{
@@ -133,22 +153,24 @@ font-weight:'Poppins',sans-serif;
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0.6;
 }
 .about .title::after{
   content: "Who we are";
   font-size: 20px;
-  color: #5f1782;
+  color: #fff;
   position: absolute;
   padding: 5px;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+  opacity: 0.6;
 }
 .about .title{
   position: relative;
   margin-bottom: 60px;
   padding-bottom: 20px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 40px;
   text-align: center;
   font-family: "ubuntu",sans-serif;
@@ -160,28 +182,28 @@ font-weight:'Poppins',sans-serif;
 }
 .about .about-content .text-right .text span{
   color: #5f1782;
+  opacity: 0.6;
 }
 .about .about-content .text-right p{
   text-align: justify;
-}
-.about{
-  background-color: #f8f9fa;
 }
 .links .products li a{
   color: #fff !important;
   font-weight: 600;
   text-align: right;
   list-style: none;
+  opacity: 0.6;
 }
 .list-unstyled li a{
  color: #fff !important;
  font-weight: 600;
  text-align: right;
  list-style: none;
+ opacity: 0.6;
 }
  .footer{
   background: linear-gradient(to right, #a517ba,#5f1782)!important;
-  color: white;
+  opacity: 0.5;
 }
 .row .text .pt-5{
   text-transform: inherit;
@@ -198,7 +220,7 @@ font-weight:'Poppins',sans-serif;
 .awards .title::after{
   content: "Our Achievements";
   font-size: 20px;
-  color: #5f1782;
+  color: #fff;
   position: absolute;
   padding: 5px;
   bottom: -10px;
@@ -216,7 +238,4 @@ font-weight:'Poppins',sans-serif;
 }
 .awards img{
   border-radius: 50%;
-}
-.awards{
-  background-color: #fff;
 }
